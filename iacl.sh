@@ -1,7 +1,7 @@
 !#/bin/bash
 
-echo"Cridiretorios..."
-
+echo"Criando diretórios..."
+  
 mkdir /publico
 mkdir /adm
 mkdir /ven
@@ -13,7 +13,7 @@ groupadd GRP_ADM
 groupadd GRP_VEN
 groupadd GRP_SEC
 
-echo "Criando usuarios..."
+echo "Criando usuários..."
 
 useradd kamilly -m -s /bin/bash -p $(openssl passwd -crypt 123) -G GRP_ADM
 useradd matheus -m -s /bin/bash -p $(openssl passwd -crypt 123) -G GRP_ADM
